@@ -1,5 +1,5 @@
 {
-    "name": "snake-tn/module-shipping-core",
+    "name": "gls-m2-extension/module-shipping-core",
     "version": "3.2.0",
     "type": "magento2-module",
     "description": "Netresearch component providing utilities and frameworks for advanced shipping features",
