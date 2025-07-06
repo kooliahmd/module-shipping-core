@@ -49,7 +49,7 @@ class DeliveryLocationInputsProcessor implements ShippingOptionsProcessorInterfa
         int $storeId,
         string $countryCode,
         string $postalCode,
-        ShipmentInterface $shipment = null
+        ?ShipmentInterface $shipment = null
     ): array {
         foreach ($shippingOptions as $shippingOption) {
             if ($shippingOption->getCode() === Codes::SERVICE_OPTION_DELIVERY_LOCATION) {

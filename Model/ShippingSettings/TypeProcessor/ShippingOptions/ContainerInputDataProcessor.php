@@ -153,7 +153,7 @@ class ContainerInputDataProcessor implements ShippingOptionsProcessorInterface
         int $storeId,
         string $countryCode,
         string $postalCode,
-        ShipmentInterface $shipment = null
+        ?ShipmentInterface $shipment = null
     ): array {
         if (!isset($shippingOptions[Codes::PACKAGE_OPTION_DETAILS])) {
             // packageDetails shipping option does not exist, nothing to modify

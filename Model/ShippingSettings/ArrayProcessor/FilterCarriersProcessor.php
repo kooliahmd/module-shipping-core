@@ -22,7 +22,7 @@ class FilterCarriersProcessor implements ShippingSettingsProcessorInterface
      *
      * @return mixed[]
      */
-    public function process(array $shippingSettings, int $storeId, ShipmentInterface $shipment = null): array
+    public function process(array $shippingSettings, int $storeId, ?ShipmentInterface $shipment = null): array
     {
         if (!$shipment) {
             // no filter criteria available, proceed with all carriers' data

@@ -189,7 +189,7 @@ class CompatibilityEnforcer implements CarrierDataProcessorInterface
         int $storeId,
         string $countryCode,
         string $postalCode,
-        ShipmentInterface $shipment = null
+        ?ShipmentInterface $shipment = null
     ): CarrierDataInterface {
         for ($iteration = 0; $iteration <= 5; $iteration++) {
             $inputsModified = $this->processRules($shippingSettings);

@@ -52,7 +52,7 @@ class RouteProcessor implements ItemShippingOptionsProcessorInterface
         int $storeId,
         string $countryCode,
         string $postalCode,
-        ShipmentInterface $shipment = null
+        ?ShipmentInterface $shipment = null
     ): array {
         $shippingOrigin = $this->config->getOriginCountry($storeId);
 

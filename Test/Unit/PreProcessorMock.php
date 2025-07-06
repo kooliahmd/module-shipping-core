@@ -21,7 +21,7 @@ class PreProcessorMock extends CompatibilityPreProcessor
         int $storeId,
         string $countryCode,
         string $postalCode,
-        ShipmentInterface $shipment = null
+        ?ShipmentInterface $shipment = null
     ): CarrierDataInterface {
         return $shippingSettings;
     }

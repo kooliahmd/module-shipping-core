@@ -65,7 +65,7 @@ class RemoveUnusedConsumerServicesProcessor implements ShippingOptionsProcessorI
         int $storeId,
         string $countryCode,
         string $postalCode,
-        ShipmentInterface $shipment = null
+        ?ShipmentInterface $shipment = null
     ): array {
         if (!$shipment) {
             return $shippingOptions;

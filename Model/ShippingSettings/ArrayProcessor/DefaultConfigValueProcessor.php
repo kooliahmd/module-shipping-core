@@ -34,7 +34,7 @@ class DefaultConfigValueProcessor implements ShippingSettingsProcessorInterface
      *
      * @return mixed[]
      */
-    public function process(array $shippingSettings, int $storeId, ShipmentInterface $shipment = null): array
+    public function process(array $shippingSettings, int $storeId, ?ShipmentInterface $shipment = null): array
     {
         foreach ($shippingSettings['carriers'] as $carrierCode => &$carrierData) {
             foreach ($carrierData as $setting => &$properties) {

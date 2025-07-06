@@ -91,7 +91,7 @@ class CompatibilityPreProcessor implements CarrierDataProcessorInterface
         int $storeId,
         string $countryCode,
         string $postalCode,
-        ShipmentInterface $shipment = null
+        ?ShipmentInterface $shipment = null
     ): CarrierDataInterface {
         $processedRules = [];
         $shippingOptions = array_merge($shippingSettings->getServiceOptions(), $shippingSettings->getPackageOptions());
