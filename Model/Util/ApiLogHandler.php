@@ -48,8 +48,8 @@ class ApiLogHandler extends Base
         string $logEnabledConfigPath,
         string $logLevelConfigPath,
         ScopeConfigInterface $scopeConfig,
-        string $filePath = null,
-        string $fileName = null
+        ?string $filePath = null,
+        ?string $fileName = null
     ) {
         parent::__construct($filesystem, $filePath, $fileName);
 

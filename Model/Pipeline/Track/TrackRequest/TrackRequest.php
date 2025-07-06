@@ -45,8 +45,8 @@ class TrackRequest implements TrackRequestInterface
     public function __construct(
         int $storeId,
         string $trackNumber,
-        ShipmentInterface $salesShipment = null,
-        ShipmentTrackInterface $salesTrack = null
+        ?ShipmentInterface $salesShipment = null,
+        ?ShipmentTrackInterface $salesTrack = null
     ) {
         $this->storeId = $storeId;
         $this->trackNumber = $trackNumber;

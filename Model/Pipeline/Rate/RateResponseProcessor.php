@@ -36,7 +36,7 @@ class RateResponseProcessor implements RateResponseProcessorInterface
      * @param RateRequest|null $request
      * @return Method[]
      */
-    public function processMethods(array $methods, RateRequest $request = null): array
+    public function processMethods(array $methods, ?RateRequest $request = null): array
     {
         foreach ($this->processors as $processor) {
             $methods = $processor->processMethods($methods, $request);

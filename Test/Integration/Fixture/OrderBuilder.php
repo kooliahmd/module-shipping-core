@@ -61,7 +61,7 @@ class OrderBuilder
         $this->additionalFees = [];
     }
 
-    public static function anOrder(ObjectManagerInterface $objectManager = null): OrderBuilder
+    public static function anOrder(?ObjectManagerInterface $objectManager = null): OrderBuilder
     {
         if ($objectManager === null) {
             $objectManager = Bootstrap::getObjectManager();

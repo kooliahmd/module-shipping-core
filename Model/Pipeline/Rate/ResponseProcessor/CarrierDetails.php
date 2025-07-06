@@ -22,7 +22,7 @@ class CarrierDetails implements RateResponseProcessorInterface
      *
      * @return Method[]
      */
-    public function processMethods(array $methods, RateRequest $request = null): array
+    public function processMethods(array $methods, ?RateRequest $request = null): array
     {
         $carrierCode = $request->getData('carrier_code');
         $carrierTitle = $request->getData('carrier_title');

@@ -22,7 +22,7 @@ class FreeShipping implements RateResponseProcessorInterface
      *
      * @return Method[]
      */
-    public function processMethods(array $methods, RateRequest $request = null): array
+    public function processMethods(array $methods, ?RateRequest $request = null): array
     {
         foreach ($methods as $method) {
             // Check if cart price rule was applied

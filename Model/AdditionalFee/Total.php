@@ -85,12 +85,12 @@ class Total extends Address\Total\AbstractTotal
      * Magento Core calls this method or something goes wrong, the
      * AdditionalFeeManagement determines a fallback label.
      *
-     * @see AdditionalFeeManagement::getLabel
-     *
      * @param string|null $shippingMethod
      * @return Phrase
+     *@see AdditionalFeeManagement::getLabel
+     *
      */
-    public function getLabel(string $shippingMethod = null): Phrase
+    public function getLabel(?string $shippingMethod = null): Phrase
     {
         $carrierCode = strtok((string) $shippingMethod, '_');
         return $this->additionalFeeManagement->getLabel((string) $carrierCode);
