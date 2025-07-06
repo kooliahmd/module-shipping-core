@@ -66,7 +66,7 @@ class OrderItemAttributes extends AbstractModel implements OrderItemAttributesIn
     /**
      * @param string|null $countryOfManufacture
      */
-    public function setCountryOfManufacture(string $countryOfManufacture = null): void
+    public function setCountryOfManufacture(?string $countryOfManufacture = null): void
     {
         $this->setData(self::COUNTRY_OF_MANUFACTURE, $countryOfManufacture);
     }
