@@ -83,13 +83,13 @@ class Package implements PackageInterface
         string $weightUom,
         string $dimensionsUom,
         float $weight,
-        float $length = null,
-        float $width = null,
-        float $height = null,
-        float $customsValue = null,
+        ?float $length = null,
+        ?float $width = null,
+        ?float $height = null,
+        ?float $customsValue = null,
         string $contentType = '',
         string $contentExplanation = '',
-        PackageAdditionalInterface $packageAdditional = null
+        ?PackageAdditionalInterface $packageAdditional = null
     ) {
         $this->productCode = $productCode;
         $this->containerType = $containerType;

@@ -80,7 +80,7 @@ class PackageItem implements PackageItemInterface
         float $qty,
         float $weight,
         float $price,
-        float $customsValue = null,
+        ?float $customsValue = null,
         string $sku = '',
         string $countryOfOrigin = '',
         string $exportDescription = '',

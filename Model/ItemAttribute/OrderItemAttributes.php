@@ -58,7 +58,7 @@ class OrderItemAttributes extends AbstractModel implements OrderItemAttributesIn
     /**
      * @param string|null $hsCode
      */
-    public function setHsCode(string $hsCode = null): void
+    public function setHsCode(?string $hsCode = null): void
     {
         $this->setData(self::HS_CODE, $hsCode);
     }

@@ -1,6 +1,6 @@
 {
     "name": "gls-m2-extension/module-shipping-core",
-    "version": "3.5",
+    "version": "3.6",
     "type": "magento2-module",
     "description": "Netresearch component providing utilities and frameworks for advanced shipping features",
     "license": "OSL-3.0",
